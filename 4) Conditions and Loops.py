@@ -12,4 +12,4 @@ def odd_sum(a, b):
             a = a+1
 
 
-odd_sum(1, 7)
+odd_sum(4246, 8680)
