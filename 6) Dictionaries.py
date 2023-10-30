@@ -9,6 +9,7 @@ with open('rosalind_ini6.txt', 'r') as f:
     print(type(lns))
     for word in lns[0].split(" "):
         print(word)
+        
     # print(lis)
     # lis.sort()
     # print(lis)
