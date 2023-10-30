@@ -1,3 +1,4 @@
+from collections import Counter
 with open('rosalind_ini6.txt', 'r') as f:
     # lis = [line.split(" ") for line in f.readlines()]
     # print(lis)
@@ -13,6 +14,7 @@ with open('rosalind_ini6.txt', 'r') as f:
     print(lis)
     lis.sort()
     print(lis)
+    print(Counter(lis))
 
     # cnt = f.split( )
     # print(cnt)
