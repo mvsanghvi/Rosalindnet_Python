@@ -9,13 +9,22 @@ with open('rosalind_ini6.txt', 'r') as f:
     print(type(lns))
     lis = lns[0].split(" ")
     print(lis)
-    lis.sort()
-    print(lis)
-    print(type(lis))
+    lis2 = []
+    for a in lis:
+        if a.endswith("\n"):
+            lis2.append(a.replace("\n", ""))
+        else:
+            lis2.append(a)
+        
+    print(lis2)
+    # lis = [a.replace("\n", "") if a.endswith("\n") else a for a in lis]
+    # lis.sort()
+    # print(lis)
+    # print(type(lis))
     # for word in lis:
     #     print(word)
-    cnt= Counter(lis)
-    print(cnt)
+    cnt= Counter(lis2)
+    # print(cnt)
     for key in cnt:
         print(key, cnt[key])
     # print(type(cnt))
