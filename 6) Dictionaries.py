@@ -7,18 +7,21 @@ with open('rosalind_ini6.txt', 'r') as f:
     lns= f.readlines()
     print(lns)
     print(type(lns))
-    for word in lns[0].split(" "):
-        print(word)
+    lis = lns[0].split(" ")
+    print(lis)
+    lis.sort()
+    print(lis)
+    print(type(lis))
+    # for word in lis:
+    #     print(word)
+    cnt= Counter(lis)
+    print(cnt)
+    for key in cnt:
+        print(key, cnt[key])
+    # print(type(cnt))
         
-    # print(lis)
-    # lis.sort()
-    # print(lis)
-    # for key, value in sortedout.items():
+    # for key, value in lis.items():
     #     print(key)
     #     print (value)
 
-    # print(Counter(lis))
-
-    # cnt = f.split( )
-    # print(cnt)
 #parce sentence into a list, count occurances
