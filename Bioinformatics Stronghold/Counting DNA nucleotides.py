@@ -38,6 +38,6 @@ with open('rosalind_dna.txt', 'r') as f:
         b= b+1
     elif i == 'G':
         c= c+1
-    else:
+    elif i == 'T':
         d= d+1
 print(f"{a} {b} {c} {d}")
